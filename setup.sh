@@ -43,8 +43,8 @@ sudo tar -C /usr/local -xf go1.23.6.linux-amd64.tar.gz
 rm -f go1.23.6.linux-amd64.tar.gz
 
 tee -a ~/.bashrc << EOF
-export GOPATH=\$HOME/go
-export PATH=/usr/local/go/bin:\$PATH
+export GOPATH="$HOME/go"
+export PATH="/usr/local/go/bin:$PATH"
 EOF
 source ~/.bashrc
 
